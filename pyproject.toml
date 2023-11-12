@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "dramatiq-mcls"
+version = "0.1.0"
+description = ""
+authors = ["Annex K <roadto3kmmr@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+dramatiq = {extras = ["rabbitmq"], version = "^1.15.0"}
+dependency-injector = "^4.41.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.11.0"
+mypy = "^1.7.0"
+ruff = "^0.1.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.black]
+line-length = 120
